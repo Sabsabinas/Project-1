@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Philosopher";
+    src: local("Philosopher");
+    src: url(../font/Philosopher-Regular.ttf)
+}
+
+html {
+    font-family: "Roboto!";
+    /* шрифт ко всему файлу */
+}
+
+@font-face {
+    font-family: 'Roboto!';
+    src: url(../font/Roboto-Regular.eot);
+    src: url(../font/Roboto-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../font/Roboto-Regular.woff) format('woff'),
+        url(../font/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto!';
+    src: url(../font/Roboto-Bold.eot);
+    src: url(../font/Roboto-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../font/Roboto-Bold.woff) format('woff'),
+        url(../font/Roboto-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #FFE2b0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+
+li {
+    display: inline;
+    /* перевели с блочного в строчный(для горизонтального стписка */
+    margin-right: 100px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* a:hover { 
+    color: red;
+    font-size: 30px;
+} псевдокласс. меняется при наведении курсора*/
+
+li:last-child {
+    /* псевдокласс который относится ко все последним элементам в списке */
+    margin-right: 0px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.section-about {
+    height: 640px;
+    /*     background-image: url(../img/01-╨Ъ╨░╤А╤В╨╕╨╜╨║╨░-╤Д╨╛╨╜╨░.jpg);
+    background-position: center;
+    background-size: cover; */
+
+    background: url(../img/01-╨Ъ╨░╤А╤В╨╕╨╜╨║╨░-╤Д╨╛╨╜╨░.jpg) center / cover no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-about_block {
+    width: 420px;
+    height: 190px;
+    background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8)100%);
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    padding-top: 15px;
+}
+
+.section-about_border {
+    width: 390px;
+    height: 160px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 17px 0 0 28px;
+    text-align: left;
+}
+
+.section-about_title {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 9px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.section-about_text {
+    font-size: 12px;
+}
+
+.section-description {
+    margin-bottom: 20px;
+}
+
+.section-description_icon-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-description_icon-box img {
+    margin-right: 76px;
+}
+
+.section-description_icon-box img:last-child {
+    margin-right: 0px
+}
+
+.section-description_title {
+    font-size: 96px;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.red {
+    color: red;
+}
+
+.section-description_text {
+    font-size: 18px;
+    margin: 0px;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.section-map_title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* .line {
+    border-top: 1px solid #9999;
+    width: 1024px;
+    margin: 0 auto
+} */
+
+hr {
+    border: none;
+    border-top: 1px solid #9999;
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 80px;
+}
+
+h1 {
+    /*     font-family: 'Roboto', sans-serif;
+    font-weight: 400; */
+    font-family: "Roboto!";
+}
